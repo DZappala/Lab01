@@ -1,0 +1,129 @@
+.container {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.navbar li a {
+    display: block;
+    width: 60px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #000;
+    color: #ffffff;
+    width: 168px;
+}
+
+#titlecard {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.container h1 {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-family: Merriweather;
+    font-weight: 100;
+    color: #000;
+    background-color: #f1f1f1;
+    letter-spacing: 5px;
+    width: 100%;
+    z-index: 5;
+}
+
+.footbar { 
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.p-grid {
+    display: grid;
+    grid-template-columns: repeat( 3, auto);
+    grid-template-rows: repeat( 3, auto);
+    grid-gap: 10px;
+}
+
+.p-grid img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: scale-down;
+}
+
+.t-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 20px;
+}
+
+.t-grid .itemA {
+    grid-row-start: 3;
+}
+
+.t-grid .itemB {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.t-grid .itemC {
+    grid-column-start: 3; 
+    grid-row-start: 3;
+}
+
+.t-grid h1 {
+    font-family: Merriweather;
+    font-weight: 500;
+    background-color: #f1f1f1;
+}
+
+.t-grid p {
+    font-family: "Merriweather" ;
+    font-weight: 100;
+}
+
+.container .abtmain p{
+    position: absolute;
+    padding: 100px;
+    margin: 100px;
+    line-height: 50px;
+    font-family: Merriweather;
+    font-weight: 100;
+    text-align: center;
+}
+
+form {
+    padding-top: 200px;
+    text-align: center;
+}
+
+form textarea {
+    height: 100px;
+    width: 200px;
+}
